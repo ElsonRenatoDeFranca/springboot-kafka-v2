@@ -1,4 +1,4 @@
-package com.training.kafka.demoapp;
+package com.training.kafka.demoapp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

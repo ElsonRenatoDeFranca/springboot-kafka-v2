@@ -10,7 +10,7 @@ import static io.restassured.RestAssured.when;
 import static io.restassured.RestAssured.given;
 
 @SpringBootTest
-public class HomeControllerTest {
+public class UserControllerTest {
 
     /*@Test
     public void retrieveCartById_shouldReturn200_whenCartIsFound() {

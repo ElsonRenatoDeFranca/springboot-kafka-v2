@@ -1,5 +1,6 @@
 package com.training.kafka.demoapp;
 
+import com.training.kafka.demoapp.controller.UserController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +15,7 @@ class DemoappApplicationTests {
 
 
 	@Autowired
-	private HomeController controller;
+	private UserController controller;
 
 	@Test
 	public void contextLoads()  throws Exception{

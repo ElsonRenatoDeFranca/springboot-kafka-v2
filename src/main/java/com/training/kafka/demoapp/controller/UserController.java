@@ -1,5 +1,6 @@
-package com.training.kafka.demoapp;
+package com.training.kafka.demoapp.controller;
 
+import com.training.kafka.demoapp.model.UserModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("kafka")
-public class HomeController {
+public class UserController {
 
     @Autowired
     KafkaTemplate<String, UserModel> kafkaTemplate;

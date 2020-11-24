@@ -1,5 +1,6 @@
-package com.training.kafka.demoapp;
+package com.training.kafka.demoapp.configuration;
 
+import com.training.kafka.demoapp.model.UserModel;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.context.annotation.Bean;

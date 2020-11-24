@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
 
     @Autowired
-    KafkaTemplate<String, String> kafkaTemplate;
-    private static final String TOPIC = "NewTopic";
+    KafkaTemplate<String, UserModel> kafkaTemplate;
+    private static final String TOPIC = "TestTopic";
 
-    @GetMapping("/publish/{message}")
-    public String post(@PathVariable ("message") String message){
+    @GetMapping("/publish/{name}")
+    public String post(@PathVariable ("name") String name){
         
-        kafkaTemplate.send(TOPIC, message);
+        kafkaTemplate.send(TOPIC, new UserModel(name, "Technology", 2000L));
         return "published successfully";
     }
 }
